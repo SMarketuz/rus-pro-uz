@@ -1,0 +1,10 @@
+{
+  "name": "Rus tili 30 kunda",
+  "short_name": "Rus tili",
+  "lang": "uz",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0f1220",
+  "theme_color": "#3b5bfd",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}

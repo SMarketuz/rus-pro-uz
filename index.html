@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Rus tili 30 kunda</title>
+  <meta name="description" content="30 kunda kundalik hayot uchun ruscha gapirishni o'rganing: jumlalar, dialoglar, talaffuz, gapirish mashqi va testlar.">
+  <meta name="theme-color" content="#3b5bfd">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    /* Mavzuni sahifa chizilishidan oldin qo'llash (miltillamaslik uchun) */
+    try { var t = (JSON.parse(localStorage.getItem('rus30.v1')) || {}).theme;
+      if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="#/" aria-label="Bosh sahifa"><span class="flag">🇷🇺</span> Rus tili · 30 kun</a>
+    <button class="icon-btn" id="themeBtn" aria-label="Mavzuni almashtirish">🌓</button>
+  </header>
+
+  <main id="app" aria-live="polite"></main>
+
+  <nav class="bottom" aria-label="Asosiy menyu">
+    <a href="#/" data-nav="home"><span>🏠</span>Darslar</a>
+    <a href="#/cards" data-nav="cards"><span>🃏</span>Kartochkalar<i id="dueBadge" hidden></i></a>
+    <a href="#/settings" data-nav="settings"><span>⚙️</span>Sozlamalar</a>
+  </nav>
+
+  <div id="toast" role="status"></div>
+
+  <script src="js/data/plan.js"></script>
+  <script src="js/data/days-01-05.js"></script>
+  <script src="js/data/days-06-10.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
