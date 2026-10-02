@@ -7,5 +7,5 @@ Mikrofon (gapirish mashqi) faqat `https://` yoki `localhost` da ishlaydi; Androi
 
 ## Tuzilma
 - `js/data/plan.js` — 30 kunlik reja (har 5-kun takrorlash)
-- `js/data/days-*.js` — kunlik kontent (hozir 1–20). Yangi kun qo'shish: `DAYS[n] = {...}` va `plan.js` da `ready: true`
+- `js/data/days-*.js` — kunlik kontent (1–30, hammasi tayyor). Yangi kun qo'shish: `DAYS[n] = {...}` va `plan.js` da `ready: true`
 - `js/app.js` — dars, TTS/STT, test, kartochkalar (Leitner 1-3-7-14-30), progress (localStorage)

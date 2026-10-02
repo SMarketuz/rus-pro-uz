@@ -185,7 +185,7 @@
         <div class="stat"><b>⭐ ${Object.values(S.speak).filter(v => v >= 70).length}</b><span>yaxshi aytilgan</span></div>
       </div>
       <h2>30 kunlik reja</h2>
-      <p class="muted small">Har 5-kun — takrorlash. Hozircha 1–20-kunlar tayyor, qolganlari keyingi bosqichda qo'shiladi.</p>
+      <p class="muted small">Har 5-kun — takrorlash. ${PLAN.every(p => hasDay(p.n)) ? 'Barcha 30 kun tayyor.' : 'Ba\'zi kunlar keyingi bosqichda qo\'shiladi.'}</p>
       <div class="grid">${tiles}</div>`;
   }
 
@@ -453,7 +453,7 @@
     },
     finish() {
       const n = cur.n; dayStep(n).grammar = true; S.done[n] = true; touch(); save();
-      toast(`🎉 ${n}-kun yakunlandi!`); go('#/');
+      toast(PLAN.every(p => S.done[p.n]) ? '🏆 Tabriklaymiz! 30 kunlik kurs tugadi!' : `🎉 ${n}-kun yakunlandi!`); go('#/');
     },
     flip() { C.cs.flip = !C.cs.flip; draw(); if (C.cs.flip && S.autoSpeak && S.cardDir === 'uz') say(C.cs.q[C.cs.i].ru); },
     cdir(b) { S.cardDir = b.dataset.v; save(); draw(); },
