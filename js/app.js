@@ -185,7 +185,7 @@
         <div class="stat"><b>⭐ ${Object.values(S.speak).filter(v => v >= 70).length}</b><span>yaxshi aytilgan</span></div>
       </div>
       <h2>30 kunlik reja</h2>
-      <p class="muted small">Har 5-kun — takrorlash. Hozircha 1–10-kunlar tayyor, qolganlari keyingi bosqichda qo'shiladi.</p>
+      <p class="muted small">Har 5-kun — takrorlash. Hozircha 1–20-kunlar tayyor, qolganlari keyingi bosqichda qo'shiladi.</p>
       <div class="grid">${tiles}</div>`;
   }
 
