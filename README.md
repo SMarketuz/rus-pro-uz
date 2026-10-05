@@ -12,4 +12,3 @@ Mikrofon (gapirish mashqi) faqat `https://` yoki `localhost` da ishlaydi; Androi
 
 
 
-POSTMO-AGENT:eyJ1IjoiaHR0cHM6Ly9wb3N0bW8udXoiLCJ0Ijoia2FnX2RjZDQyZDhhYzk2NzQ1ZTI4YTAzZTBlYjQ4ODliZmU4Y2FjNTgwZjZmZWI0MGIyMGQwMWQ5ODVhOTZhM2IzMDcifQ==
